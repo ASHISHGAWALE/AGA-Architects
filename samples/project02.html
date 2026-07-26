@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | AGA Architectural Firm</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <!-- Header -->
+ <header class="project-header">
+    <div class="logo">AGA</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </header>
+
+
+<!-- Fullscreen Menu -->
+<div class="menu-overlay" id="menu-overlay">
+  <div class="menu-header">
+    <div class="close-btn" id="close-btn">&times;</div>
+  </div>
+  <ul>
+    <li><a href="../home/index.html">Home</a></li>
+      <li><a href="../project/project.html">Projects</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="../jobs/job.html">Jobs</a></li>
+      <li><a href="../contact/contact.html">Contact</a></li>
+      <li><a href="../T&F/t&f.html">Tff</a></li>
+      <li><a href="../Next/Next.html">NEXT</a></li>
+  </ul>
+</div>
+
+
+  <!-- Projects Grid -->
+  <section class="projects-grid">
+  <div class="project-card" >
+    <img src="../samples/src/project02_pune_villas/pune_villa (1).png" alt="Nieuw Bergen">
+  </div>
+<div class="project-card">
+    <img src="../samples/src/project02_pune_villas/pune_villa (2).png" alt="Nieuw Bergen">
+    
+  </div>
+  <div class="project-card">
+    <img src="../samples/src/project02_pune_villas/pune_villa (3).png" alt="Nieuw Bergen">
+  </div>
+  <div class="project-card">
+    <img src="../samples/src/project02_pune_villas/pune_villa (4).png" alt="Nieuw Bergen">
+  </div>
+  <div class="project-card">
+    <img src="../samples/src/project02_pune_villas/pune_villa (5).png" alt="Nieuw Bergen">
+  </div>
+  
+  
+  <!-- Repeat for other projects -->
+</section>
+
+  <!-- Footer Section -->
+<footer class="footer">
+    <h2>EXPERIENCE MORE</h2>
+    <nav class="footer-nav">
+      
+    </nav>
+  </div>
+</footer>
+
+  <script src="../project/project.js"></script>
+</body>
+<style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.menu-toggle {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1em;
+}
+
+.search-filter {
+  font-weight: 700;
+}
+
+.project-count {
+  color: #555;
+}
+
+.view-options span {
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-options .active {
+  text-decoration: line-through;
+}
+
+/* Scrollable bottom row */
+.header-bottom {
+  margin-top: 80px; /* ensures projects start below sticky top row */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-filter {
+  font-weight: 700;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.project-count {
+  color: #555;
+  font-size: 1em;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.view-options {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.view-options .active {
+  text-decoration: line-through;
+}
+
+/* Optional shadow when scrolling */
+.header-top.scrolled {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* Fullscreen Menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close-btn {
+  font-size: 4em;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+
+.menu-overlay ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-overlay li {
+  margin: 15px 0;
+}
+
+.menu-overlay a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.menu-overlay a:hover {
+  color: #e67e22;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1em;
+}
+
+.search-filter {
+  font-weight: 700;
+}
+
+.project-count {
+  color: #555;
+}
+
+.view-options span {
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-options .active {
+  text-decoration: line-through;
+}
+
+/* Projects Grid */
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px 40px;
+}
+
+.project-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 1 / 1; /* 🔹 ensures square shape */
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image proportional */
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay text */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Overlay text */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6); /* semi-transparent black */
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+
+
+.footer {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 80px 20px 40px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border-top: 1px solid #ddd;
+  height: 45vh;
+}
+
+.footer-content h2 {
+  font-size: 3.5em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #000;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #000; /* outlined text effect */
+  color: transparent;
+  margin-top: 100px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 100px;
+  /* margin-bottom: 0px; */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+  
+}
+
+.footer-nav a:hover {
+  color: #e67e22;
+}
+
+</style>
+</html>
