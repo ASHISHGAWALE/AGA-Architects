@@ -7,6 +7,7 @@ body {
   height: 100%;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #fff;
+  text-transform: uppercase;
 }
 
 header {
@@ -202,7 +203,7 @@ header {
 /* Background Image */
 .hero-image {
   height: 80vh;
-  background: url('https://www.mvrdv.com/media/uploads/MVRDV_HOUSE(3).jpg?width=1200') center/cover no-repeat;
+  background: url('../SRC/about.png') center/cover no-repeat;
 }
 
 /* About Description Section */

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGA Architectural Firm</title>
+  <link rel="stylesheet" href="t&f.css">
+</head>
+<body>
+  <header>
+    <div class="logo">AGA</div>
+    <div class="menu-toggle" id="menu-toggle">
+  <span class="line line1"></span>
+  <span class="line line2"></span>
+  <span class="line line3"></span>
+</div>
+  </header>
+
+  <!-- Fullscreen Menu -->
+  <div class="menu-overlay" id="menu-overlay">
+    
+
+    <ul class="main-menu">
+      <li><a href="../home/index.html">Home</a></li>
+      <li><a href="../project/project.html">Projects</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="../jobs/job.html">Jobs</a></li>
+      <li><a href="../contact/contact.html">Contact</a></li>
+      <li><a href="../T&F/t&f.html">Tff</a></li>
+      <li><a href="../Next/Next.html">NEXT</a></li>
+    </ul>
+
+    <div class="bottom-menu">
+      <span>ARCHITECTURE</span>
+      <span>INTERIOR</span>
+      <span>CULTURE</span>
+      <span>PUBLIC</span>
+      <span>SUSTAINABILITY</span>
+      <span>RESEARCH</span>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+<style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+header {
+  position: fixed;   /* stays visible while scrolling */
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: bold;
+  z-index: 1000;
+  transition: color 0.3s ease;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 2.5em;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.line {
+  display: block;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Different line lengths */
+.line1 {
+  width: 60%;
+  align-self: flex-start;
+}
+.line2 {
+  width: 100%;
+}
+.line3 {
+  width: 70%;
+  align-self: flex-end;
+}
+
+/* When menu is active, animate into an X */
+.menu-toggle.active .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+  width: 100%;
+}
+.menu-toggle.active .line2 {
+  opacity: 0;
+}
+.menu-toggle.active .line3 {
+  transform: rotate(-45deg) translate(6px, -6px);
+  width: 100%;
+}
+
+
+
+/* Fullscreen Menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 999;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.close-btn, .search-icon {
+  font-size: 2.5em;
+  cursor: pointer;
+  color: #000;
+}
+
+.main-menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.main-menu li {
+  margin: 15px 0;
+}
+
+.main-menu a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+  color: #e67e22;
+}
+
+.bottom-menu {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #000;
+}
+
+
+</style>
+</html>

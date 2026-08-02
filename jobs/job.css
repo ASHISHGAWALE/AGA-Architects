@@ -15,6 +15,7 @@ body {
   color: #111;
   line-height: 1.7;
   font-size: 16px;
+  text-transform: uppercase;
 }
 header {
   position: fixed;
