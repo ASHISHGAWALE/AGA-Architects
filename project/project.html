@@ -8,29 +8,39 @@
 </head>
 <body>
 
-  <!-- Header -->
- <header class="project-header">
+ <header>
     <div class="logo">AGA</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="menu-toggle" id="menu-toggle">
+  <span class="line line1"></span>
+  <span class="line line2"></span>
+  <span class="line line3"></span>
+</div>
   </header>
 
+  <!-- Fullscreen Menu -->
+  <div class="menu-overlay" id="menu-overlay">
+    
 
-
-<!-- Fullscreen Menu -->
-<div class="menu-overlay" id="menu-overlay">
-  <div class="menu-header">
-    <div class="close-btn" id="close-btn">&times;</div>
-  </div>
-  <ul>
-    <li><a href="../home/index.html">Home</a></li>
+    <ul class="main-menu">
+      <li><a href="../home/index.html">Home</a></li>
       <li><a href="../project/project.html">Projects</a></li>
       <li><a href="../about/about.html">About</a></li>
       <li><a href="../jobs/job.html">Jobs</a></li>
       <li><a href="../contact/contact.html">Contact</a></li>
       <li><a href="../T&F/t&f.html">Tff</a></li>
       <li><a href="../Next/Next.html">NEXT</a></li>
-  </ul>
-</div>
+    </ul>
+
+    <div class="bottom-menu">
+      <span>ARCHITECTURE</span>
+      <span>INTERIOR</span>
+      <span>CULTURE</span>
+      <span>PUBLIC</span>
+      <span>SUSTAINABILITY</span>
+      <span>RESEARCH</span>
+    </div>
+  </div>
+
 
 <section class="projects-grid">
   <a href="../samples/project.01.html" class="project-card">
@@ -85,28 +95,21 @@
 
   <!-- Footer Section -->
 <footer class="footer">
-  <div class="footer-content">
-    <h2>EXPERIENCE MORE</h2>
     <nav class="footer-nav">
       <ul>
         <li><a href="#">Architecture</a></li>
-        <li><a href="#">Transformations</a></li>
-        <li><a href="#">Urbanism</a></li>
         <li><a href="#">Housing</a></li>
         <li><a href="#">Leisure</a></li>
-        <li><a href="#">Mixed use</a></li>
         <li><a href="#">Culture</a></li>
         <li><a href="#">Public</a></li>
         <li><a href="#">Sustainability</a></li>
-        <li><a href="#">NEXT</a></li>
-        <li><a href="#">Research</a></li>
         <li><a href="#">Interiors</a></li>
       </ul>
     </nav>
-  </div>
 </footer>
 
   <script src="project.js"></script>
+  <script src="../home/script.js"></script>
 </body>
 
 </html>

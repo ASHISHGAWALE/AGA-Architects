@@ -740,6 +740,30 @@ header{
 }
 
 }
+.arrow-btn1 {
+  width: 60px;              /* square width */
+  height: 60px;             /* square height */
+  border: 2px solid #000;   /* black border */
+  background-color: #fff;   /* white background */
+  display: flex;            /* center content */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow-btn1 span {
+  font-size: 1.5em;         /* arrow size */
+  color: #000;              /* arrow color */
+}
+
+.arrow-btn1:hover {
+  background-color: #000;   /* invert on hover */
+}
+
+.arrow-btn1:hover span {
+  color: #fff;              /* arrow turns white */
+}
 
 /* ==========================================
       LARGE DESKTOP (4K)

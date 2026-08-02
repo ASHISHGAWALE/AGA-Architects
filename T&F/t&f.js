@@ -85,3 +85,4 @@ const timer = setInterval(() => {
     countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 }, 1000);
+
