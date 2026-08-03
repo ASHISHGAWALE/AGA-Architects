@@ -203,7 +203,7 @@ header {
 /* Background Image */
 .hero-image {
   height: 80vh;
-  background: url('../SRC/about.png') center/cover no-repeat;
+  background: url('/SRC/about.png') center/cover no-repeat;
 }
 
 /* About Description Section */

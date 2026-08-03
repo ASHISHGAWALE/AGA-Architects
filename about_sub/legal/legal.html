@@ -15,19 +15,28 @@
   <span class="line line3"></span>
 </div>
   </header>
+  <section class="about-nav">
+  <ul>
+     <li><a href="../about/about.html">About</a></li>
+    <li><a href="../team/team.html">Team</a></li>
+    <li><a href="../collaborator/collab.html">Collaborator</a></li>
+    <li><a href="../legal/legal.html">Legal</a></li>
+    <li><a href="../policies/policy.html">Policies</a></li>
+  </ul>
+</section>
 
   <!-- Fullscreen Menu -->
   <div class="menu-overlay" id="menu-overlay">
     
 
     <ul class="main-menu">
-      <li><a href="../home/index.html">Home</a></li>
-      <li><a href="../project/project.html">Projects</a></li>
-      <li><a href="../about/about.html">About</a></li>
-      <li><a href="../jobs/job.html">Jobs</a></li>
-      <li><a href="../contact/contact.html">Contact</a></li>
-      <li><a href="../T&F/t&f.html">Tff</a></li>
-      <li><a href="../Next/Next.html">NEXT</a></li>
+      <li><a href="/home/index.html">Home</a></li>
+      <li><a href="/project/project.html">Projects</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/jobs/job.html">Jobs</a></li>
+      <li><a href="/contact/contact.html">Contact</a></li>
+      <li><a href="/T&F/t&f.html">Tff</a></li>
+      <li><a href="/Next/Next.html">NEXT</a></li>
     </ul>
 
     <div class="bottom-menu">
@@ -39,6 +48,17 @@
       <span>RESEARCH</span>
     </div>
   </div>
+  <section class="legal">
+    <h1>Legal</h1>
+    <div class="legal-panel">
+      <p>
+        We value your trust and are committed to protecting your privacy. 
+        Any personal information you share with us will be used solely for communication 
+        and the services you request. We do not sell, rent, or share your personal data 
+        with third parties for commercial or marketing purposes.
+      </p>
+    </div>
+  </section>
 
   <script src="../script.js"></script>
 </body>
@@ -81,6 +101,36 @@ header {
   cursor: pointer;
   z-index: 1000;
 }
+/* About Page Section Navigation */
+.about-nav {
+  margin-top: 20px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.about-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.about-nav a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.about-nav a:hover {
+  color: #e67e22;
+}
+
+.about-nav a.active {
+  text-decoration: line-through;
+}
+
 
 .line {
   display: block;
@@ -188,7 +238,26 @@ header {
   font-weight: 600;
   color: #000;
 }
+/* Legal section */
+  .legal {
+    margin: 80px auto;
+    padding-top: 50px;
+    max-width: 900px;
+    text-align: center;
+  }
 
+  .legal h1 {
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .legal-panel {
+    line-height: 1.8;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: justify;
+  }
 
 </style>
 </html>

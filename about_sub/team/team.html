@@ -15,19 +15,28 @@
   <span class="line line3"></span>
 </div>
   </header>
+  <section class="about-nav">
+  <ul>
+     <li><a href="../about/about.html">About</a></li>
+    <li><a href="../team/team.html">Team</a></li>
+    <li><a href="../collaborator/collab.html">Collaborator</a></li>
+    <li><a href="../legal/legal.html">Legal</a></li>
+    <li><a href="../policies/policy.html">Policies</a></li>
+  </ul>
+</section>
 
   <!-- Fullscreen Menu -->
   <div class="menu-overlay" id="menu-overlay">
     
 
     <ul class="main-menu">
-      <li><a href="../home/index.html">Home</a></li>
-      <li><a href="../project/project.html">Projects</a></li>
-      <li><a href="../about/about.html">About</a></li>
-      <li><a href="../jobs/job.html">Jobs</a></li>
-      <li><a href="../contact/contact.html">Contact</a></li>
-      <li><a href="../T&F/t&f.html">Tff</a></li>
-      <li><a href="../Next/Next.html">NEXT</a></li>
+      <li><a href="/home/index.html">Home</a></li>
+      <li><a href="/project/project.html">Projects</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/jobs/job.html">Jobs</a></li>
+      <li><a href="/contact/contact.html">Contact</a></li>
+      <li><a href="/T&F/t&f.html">Tff</a></li>
+      <li><a href="/Next/Next.html">NEXT</a></li>
     </ul>
 
     <div class="bottom-menu">
@@ -39,6 +48,77 @@
       <span>RESEARCH</span>
     </div>
   </div>
+
+  <section class="team-section">
+  <h2>FOUNDING PARTNERS</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="image-box">
+        <img src="founder1.jpg" alt="Founding Partner 1">
+        <div class="overlay">
+          <h3>Jacob van Rijs</h3>
+          <p>Founding Partner</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="image-box">
+        <img src="founder2.jpg" alt="Founding Partner 2">
+        <div class="overlay">
+          <h3>Jan Doe</h3>
+          <p>Founding Partner</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="image-box">
+        <img src="founder3.jpg" alt="Founding Partner 3">
+        <div class="overlay">
+          <h3>Anna Brown</h3>
+          <p>Founding Partner</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>STRATEGY BOARD</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="image-box">
+        <img src="board1.jpg" alt="Strategy Board Member 1">
+        <div class="overlay">
+          <h3>Fokke Moerel</h3>
+          <p>Partner | Head of Planning & Projects</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="image-box">
+        <img src="board2.jpg" alt="Strategy Board Member 2">
+        <div class="overlay">
+          <h3>Sarah White</h3>
+          <p>Strategy Director</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="image-box">
+        <img src="board3.jpg" alt="Strategy Board Member 3">
+        <div class="overlay">
+          <h3>Emily Chen</h3>
+          <p>Operations Lead</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
    <script src="../script.js"></script>
 </body>
@@ -115,6 +195,36 @@ header {
   transform: rotate(-45deg) translate(6px, -6px);
   width: 100%;
 }
+/* About Page Section Navigation */
+.about-nav {
+  margin-top: 20px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.about-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.about-nav a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.about-nav a:hover {
+  color: #e67e22;
+}
+
+.about-nav a.active {
+  text-decoration: line-through;
+}
+
 
 
 
@@ -187,6 +297,101 @@ header {
   font-size: 0.9em;
   font-weight: 600;
   color: #000;
+}
+.team-section {
+  max-width: 1200px;
+  margin: 40px auto; /* reduced from 100px */
+  padding: 0 40px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #000;
+}
+
+.team-section h2 {
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 20px; /* reduced gap below title */
+  text-transform: uppercase;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 0; /* ensures images start immediately below title */
+  margin-bottom: 80px;
+}
+
+
+.team-member {
+  position: relative;
+  width: 220px;   /* square width */
+  height: 220px;  /* square height */
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps proportions while filling square */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.overlay h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.image-box:hover img {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.image-box:hover .overlay {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .team-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-member {
+    width: 80%;
+  }
 }
 
 

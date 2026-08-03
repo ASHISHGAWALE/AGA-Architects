@@ -17,26 +17,24 @@ body {
   font-size: 16px;
   text-transform: uppercase;
 }
+
 header {
-  position: fixed;
-  top: 0; /* move to top edge */
-  left: 0;
-  right: 0;
-  padding: 20px 40px; /* add spacing inside */
+  position: fixed;   /* stays visible while scrolling */
+  top: 20px;
+  left: 20px;
+  right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
   z-index: 1000;
-  background-color: #ffffff; /* ensures visibility on white background */
+  transition: color 0.3s ease;
 }
-
 
 .logo {
   font-weight: 900;
   font-size: 2.5em;
-  color: #000;   /* force black */
-  transition: none; /* remove color transition if not needed */
+  transition: color 0.3s ease;
 }
 
 .menu-toggle {
@@ -156,43 +154,117 @@ header {
   color: #000;
 }
 
+/* Hero Section */
+.hero {
+  background: url('../SRC/writeup/00\ murbad\ villa.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+}
+.hero1 {
+  background: url('../SRC/writeup/03\ murbad\ villa.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+}
+.hero2 {
+  background: url('../SRC/writeup/05\ Kalyan\ school.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+}
 
+.hero-content h1 {
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.menu-overlay .logo,
+.menu-overlay .menu-toggle {
+  display: none !important;
+}
+
+/* Career Section */
 .career-section {
-  min-height: 100vh;
-  padding: 140px 40px 60px; /* pushes content below header */
+  padding: 120px 40px 60px;
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  line-height: 1.8;
 }
 
 .job-title {
-  font-size: 3em;
-  font-weight: 700;
+  font-size: 2.8em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+/* Two-column job list */
+.job-list ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 40px; /* row gap, column gap */
+  list-style-type: disc;
+  padding-left: 20px;
   margin-bottom: 40px;
 }
 
-.job-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px; /* spacing between items */
-  font-size: 1.2em;
+.job-list li {
+  font-size: 1.1em;
   font-weight: 500;
-  margin-bottom: 60px;
 }
 
+/* Apply Section */
 .apply-section {
-  text-align: center;
-  line-height: 1.8;
-  border-top: 1px solid #ddd; /* subtle divider */
-  padding-top: 40px;
+  margin-top: 20px;
 }
+
 .apply-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
+
+.apply-section p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
 .apply-section a {
   color: #000;
   text-decoration: underline;
 }
-.apply-section a:hover { color: #e67e22; }
+
+.apply-section a:hover {
+  color: #e67e22;
+}
+
+/* Note at bottom */
+.note {
+  margin-top: 50px;
+  font-size: 1em;
+  color: #444;
+}
