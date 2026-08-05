@@ -169,7 +169,7 @@ header {
   padding-left: 5%;
 }
 .hero2 {
-  background: url('../SRC/writeup/05\ Kalyan\ school.png') no-repeat center center/cover;
+  background: url('../SRC/03.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -185,12 +185,16 @@ header {
   font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  text-shadow: 0 1px 1px #000, 0 1px 2px #000, 0 2px 6px #000;
+  font-family: 'Century Gothic', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .hero-content p {
   font-size: 1.2em;
   max-width: 600px;
   line-height: 1.6;
+  text-shadow: 0 1px 1px #000, 0 1px 2px #000, 0 2px 6px #000;
+  font-family: 'Century Gothic', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .menu-overlay .logo,
@@ -265,7 +269,7 @@ hr {
 
 /* Second Slide */
 .slide {
-  background: url('../SRC/writeup/01.png') no-repeat center center/cover;
+  background: url('../SRC/04.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -276,7 +280,7 @@ hr {
   position: relative;
 }
 .slide1 {
-  background: url('../SRC/writeup/02\ pune\ villa.png') no-repeat center center/cover;
+  background: url('../SRC/05.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -298,7 +302,7 @@ hr {
   position: relative;
 }
 .slide3 {
-  background: url('../SRC/writeup/07\ kamba\ villa\ .png') no-repeat center center/cover;
+  background: url('../SRC/07.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -318,6 +322,7 @@ hr {
   color: white;
   text-align: left;
   padding-left: 5%;
+
 }
 .slide4 {
   background: url('../SRC/writeup/09.jpg') no-repeat center center/cover;
@@ -351,12 +356,16 @@ hr {
   letter-spacing: 2px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  text-shadow: 0 1px 1px #000, 0 1px 2px #000, 0 2px 6px #000;
+  font-family: 'Century Gothic', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .slide-content p {
   font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 30px;
+  text-shadow: 0 1px 1px #000, 0 1px 2px #000, 0 2px 6px #000;
+  font-family: 'Century Gothic', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .slide-link {

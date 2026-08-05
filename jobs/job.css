@@ -208,14 +208,20 @@ header {
 }
 
 /* Career Section */
+/* Career Section */
 .career-section {
   padding: 120px 40px 60px;
   max-width: 900px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;   /* center text */
   line-height: 1.8;
+  display: flex;        /* flexbox for centering */
+  flex-direction: column;
+  align-items: center;  /* center horizontally */
+  justify-content: center; /* center vertically */
 }
 
+/* Job Title */
 .job-title {
   font-size: 2.8em;
   font-weight: 800;
@@ -226,10 +232,11 @@ header {
 .job-list ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px 40px; /* row gap, column gap */
+  gap: 15px 40px;
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 40px;
+  text-align: left; /* keep list items aligned neatly */
 }
 
 .job-list li {
@@ -240,6 +247,7 @@ header {
 /* Apply Section */
 .apply-section {
   margin-top: 20px;
+  text-align: center; /* center apply section */
 }
 
 .apply-section h2 {
@@ -253,18 +261,10 @@ header {
   margin-bottom: 10px;
 }
 
-.apply-section a {
-  color: #000;
-  text-decoration: underline;
-}
-
-.apply-section a:hover {
-  color: #e67e22;
-}
-
 /* Note at bottom */
 .note {
   margin-top: 50px;
   font-size: 1em;
   color: #444;
+  text-align: center; /* center note */
 }
