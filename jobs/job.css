@@ -268,3 +268,10 @@ header {
   color: #444;
   text-align: center; /* center note */
 }
+
+.mail-link {
+  color: #000;          /* black text */
+  text-decoration: none; /* remove underline */
+  font-weight: 500;     /* optional: keep it neat */
+}
+
