@@ -314,13 +314,7 @@ header {
   font-weight: 600;
   color: #000;
 }
-.team-section {
-  max-width: 1200px;
-  margin: 40px auto; /* reduced from 100px */
-  padding: 0 40px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #000;
-}
+
 
 .team-section h2 {
   font-size: 1.2em;
@@ -330,14 +324,24 @@ header {
   text-transform: uppercase;
 }
 
+.team-section {
+  padding: 0;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 40px;
+  text-align: left; /* headings align left */
+}
+
 .team-grid {
   display: flex;
-  justify-content: center;
-  gap: 60px;
   flex-wrap: wrap;
-  margin-top: 0; /* ensures images start immediately below title */
-  margin-bottom: 80px;
+  justify-content: flex-start; /* align boxes to the left */
+  gap: 30px;
+  margin-bottom: 60px;
 }
+
+
+
 
 
 .team-member {
@@ -405,13 +409,7 @@ header {
   margin-bottom: 40px;
   text-align: center; /* ensures left alignment */
 }
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px; /* spacing between squares */
-  margin-bottom: 60px;
-}
+
 
 .name-only {
   width: 220px;
