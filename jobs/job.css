@@ -208,66 +208,42 @@ header {
 }
 
 /* Career Section */
-/* Career Section */
 .career-section {
   padding: 120px 40px 60px;
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;   /* center text */
+  text-align: center;   /* center everything */
   line-height: 1.8;
-  display: flex;        /* flexbox for centering */
-  flex-direction: column;
-  align-items: center;  /* center horizontally */
-  justify-content: center; /* center vertically */
+  display: block;
 }
 
-/* Job Title */
 .job-title {
   font-size: 2.8em;
   font-weight: 800;
   margin-bottom: 30px;
+  text-align: center;   /* center title */
 }
 
-/* Two-column job list */
 .job-list ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px 40px;
-  list-style-type: disc;
+  display: inline-block; /* keeps list centered */
+  list-style-type: none;
   padding-left: 20px;
   margin-bottom: 40px;
-  text-align: left; /* keep list items aligned neatly */
+  text-align: left;      /* bullets align neatly */
 }
 
-.job-list li {
-  font-size: 1.1em;
-  font-weight: 500;
-}
-
-/* Apply Section */
 .apply-section {
   margin-top: 20px;
-  text-align: center; /* center apply section */
+  text-align: center;    /* center apply section */
 }
 
-.apply-section h2 {
-  font-size: 1.6em;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.apply-section p {
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-
-/* Note at bottom */
 .note {
   margin-top: 50px;
   font-size: 1em;
   color: #444;
-  text-align: center; /* center note */
+  text-align: center;    /* center note */
 }
+
 
 .mail-link {
   color: #000;          /* black text */

@@ -3,7 +3,7 @@ const logo = document.querySelector('.logo');
 const menuToggle = document.getElementById('menu-toggle');
 const menuOverlay = document.getElementById('menu-overlay');
 
-// Observe sections
+// Observe sections for header color change
 const sections = document.querySelectorAll('section, footer');
 
 const observer = new IntersectionObserver(entries => {
@@ -16,11 +16,9 @@ const observer = new IntersectionObserver(entries => {
       const brightness = (0.299*rgb[0] + 0.587*rgb[1] + 0.114*rgb[2]);
 
       if (brightness < 128) {
-        // Dark background → make header white
         logo.style.color = '#fff';
         menuToggle.style.color = '#fff';
       } else {
-        // Light background → make header black
         logo.style.color = '#000';
         menuToggle.style.color = '#000';
       }
@@ -36,31 +34,35 @@ menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
 });
 
-// Counter animation function
-function animateCounter(id, target, duration) {
-  const element = document.getElementById(id);
+// Counter animation function (fast)
+function animateCounter(element, target, duration) {
   let start = 0;
-  const stepTime = Math.abs(Math.floor(duration / target));
-
-  const timer = setInterval(() => {
-    start++;
-    element.textContent = start;
+  const increment = Math.ceil(target / (duration / 16)); // ~60fps
+  function update() {
+    start += increment;
     if (start >= target) {
-      clearInterval(timer);
+      element.textContent = target;
+    } else {
+      element.textContent = start;
+      requestAnimationFrame(update);
     }
-  }, stepTime);
+  }
+  requestAnimationFrame(update);
 }
 
-// Trigger animation when section is visible
-const statsSection = document.querySelector('.stats-section');
-const statsObserver = new IntersectionObserver(entries => {
+// Observe all counters (works inside paragraphs too)
+const counters = document.querySelectorAll('.counter');
+
+const counterObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      animateCounter('awards-count', 271, 2000);   // 2 seconds duration
-      animateCounter('countries-count', 47, 2000);
-      statsObserver.unobserve(statsSection); // run only once
+      const el = entry.target;
+      const target = parseInt(el.getAttribute('data-target'));
+      animateCounter(el, target, 1000); // fast: 1 second duration
+      counterObserver.unobserve(el);
     }
   });
 }, { threshold: 0.5 });
 
-statsObserver.observe(statsSection);
+counters.forEach(counter => counterObserver.observe(counter));
+

@@ -6,6 +6,13 @@
   <title>AGA Architectural Firm</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-+Y1kYf8tXz6qk9QyQfXzjvQk2XzjvQk2XzjvQk2XzjvQk2XzjvQk2XzjvQk2XzjvQk2XzjvQk2XzjvQk2"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
 </head>
 <body>
@@ -54,7 +61,8 @@
   <!-- Awards & Countries Section -->
 <section id="stats" class="stats-section">
   <div class="stats-container">
-    <h1>With over 8 years of collective design experience, we create architecture that is innovative, sustainable, and client-focused</h1>
+    <h1>With over <span class="counter" data-target="8">0</span> projects across sectors.
+ years of collective design experience, we create architecture that is innovative, sustainable, and client-focused</h1>
     </div>
 
     <hr>
@@ -99,7 +107,9 @@
   <!-- Awards & Countries Section -->
 <section id="stats" class="stats-section">
   <div class="stats-container">
-    <h1>We specialize in luxury villas ranging from 2,500 to 15,000 sq. ft., tailored to each client's lifestyle and aspirations</h1>
+    <h1>We specialize in luxury villas ranging from <span class="counter" data-target="2500">0</span>
+ to <span class="counter" data-target="15000">0</span>
+ sq. ft., tailored to each client's lifestyle and aspirations</h1>
     </div>
 
     <hr>
@@ -166,7 +176,7 @@
   <!-- Awards & Countries Section -->
 <section id="stats" class="stats-section">
   <div class="stats-container">
-    <h1>Every project undergoes 100+ hours of design development and detailing before construction documentation begins</h1>
+    <h1>Every project undergoes <span class="counter" data-target="100">0</span>+ hours of design development and detailing before construction documentation begins</h1>
     </div>
 
     <hr>
@@ -222,6 +232,95 @@
     </div>
   </div>
 </footer>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .follow-section {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .follow-section h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      margin-bottom: 40px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .icon {
+      color: #fff;
+      font-size: 1.8rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+      color: #00bcd4;
+    }
+
+    .cookie-icon {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 1.8rem;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .cookie-icon:hover {
+      transform: rotate(20deg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Follow Section -->
+  <section class="follow-section">
+    <h2>FOLLOW AGA</h2>
+    <div class="social-icons">
+      <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-behance"></i></a>
+      <a href="#" class="icon"><i class="fa-brands fa-weixin"></i></a>
+    </div>
+    <div class="cookie-icon">
+      <i class="fa-solid fa-cookie-bite"></i>
+    </div>
+  </section>
+
+  <script>
+    // Optional hover pulse animation
+    document.querySelectorAll('.icon').forEach(icon => {
+      icon.addEventListener('mouseenter', () => {
+        icon.style.transform = 'scale(1.3)';
+      });
+      icon.addEventListener('mouseleave', () => {
+        icon.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+
+
 
 
   <script src="script.js"></script>
